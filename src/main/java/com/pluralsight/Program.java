@@ -45,5 +45,27 @@ public class Program {
                 System.out.println(person);
             }
         }
+
+        getAverageAge(people);
+    }
+
+    private static void getAverageAge(List<Person> people){
+        int totalAge = 0;
+        int averageAge = 0;
+
+        // get the age of each person and add for total then divide by number of people
+        for (Person person : people) {
+            totalAge += person.getAge();
+        }
+        averageAge = totalAge / people.size();
+
+        System.out.println(averageAge);
+    }
+    private static String getOldestPerson(){
+
+        return person;
+    }
+    private static String getYoungestPerson(){
+        return person;
     }
 }
